@@ -1,0 +1,71 @@
+Q1.
+B) Combining dense vector similarity search with sparse keyword-based retrieval (e.g., BM25)
+to improve recall 
+
+Q2.
+B) The language model is not sufficiently constrained to ground its generation in the provided
+context
+
+Q3. 
+B) Deterministically invoke structured external functions with typed arguments, extending
+beyond its training knowledge
+
+Q4. 
+D) It is always masked during MLM pre-training to force the model to rely on other tokens
+
+Q5. 
+C) Introducing cross-attention between token pairs separated by more than 128 positions
+
+Q6. 
+B) The memory required for the KV-cache linearly with sequence length
+
+Q7. 
+D) It ensures the model never produces tokens outside the target vocabulary
+
+Q8. 
+B) The desired effective batch size is larger than what fits in GPU memory, so gradients are
+accumulated over multiple smaller mini-batch passes before an optimizer step
+
+Q9. 
+B) Prefill processes the full input prompt in a single parallel forward pass to populate the KV-
+cache; decode generates output tokens one at a time autoregressively
+
+Q10. 
+A) The dataset across GPUs so each GPU trains on a different subset
+
+Q11. 
+C) It trains only the final classification head while freezing all transformer layers
+
+Q12. 
+B) Train the model to follow natural language instructions across diverse tasks, improving zero-
+shot and few-shot instruction-following behaviour
+
+Q13. 
+B) Activation values vary significantly across inputs and contain outliers that are difficult to clip
+without large accuracy loss
+
+Q14. 
+B) Identifying salient weight channels (those multiplied by large activation values) and
+preserving their precision, while aggressively quantizing less-important channels
+
+Q15. 
+C) Measuring cosine similarity between hypothesis and reference sentence embeddings
+
+Q16. 
+B) Stemming, synonym matching via WordNet, and recall in addition to precision, using a
+harmonic mean F-score with a fragmentation penalty
+
+Q17. 
+B) Use multiple diverse human references or switch to a reference-free metric such as COMET-
+QE (quality estimation without references)
+
+Q18. 
+D) Enforce sparsity in the attention pattern by grouping tokens into fixed-size blocks
+
+Q19. 
+B) Dynamically inserting new requests into an ongoing batch at each decode step rather than
+waiting for all sequences to finish before accepting new ones
+
+Q20. 
+B) The system iteratively reformulates the query using intermediate retrieved information to
+answer questions that require synthesising evidence from multiple separate documents
